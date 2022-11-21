@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-    int maxCount = 5;
-    for(int i = 0; i < maxCount; i++){
-        int fibonacci = SequenzaFibonacci(i);
-        System.out.println(fibonacci);
+    int maxCount = 5; //qui abbiamo stabilito la lunghezza dei numeri per fare la sequenza
+    for(int i = 0; i < maxCount; i++){ // qui abbiamo fatto un ciclo for per la quale
+        int fibonacci = SequenzaFibonacci(i); //abbiamo dichiarato una variabile che è la sottoclasse SequenzaFibonacci e il generics è l'indice del for
+        System.out.println(fibonacci); //abbiamo stampato la variabile dichiarata sopra
     }
 
     }
 
     public static int SequenzaFibonacci(int n) {
+    // creata sottoclasse con generics n per la quale si stabilisce la condizione che se n è 0, mi ritorni 0, anche se n è 1 mi ritorni 1
+    // altrimenti mi fai la somma di n -1 e n-2
         if(n == 0){
             return 0;
         }
