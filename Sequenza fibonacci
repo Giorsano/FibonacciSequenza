@@ -9,7 +9,7 @@ public class Main {
     }
 
     public static int SequenzaFibonacci(int n) {
-    // creato metodo con generics n per la quale si stabilisce la condizione che se n è 0, mi ritorni 0, anche se n è 1 mi ritorni 1
+    // creato metodo con parametro in input n per la quale si stabilisce la condizione che se n è 0, mi ritorni 0, anche se n è 1 mi ritorni 1
     // altrimenti mi fai la somma di n -1 e n-2
         if(n == 0){
             return 0;
